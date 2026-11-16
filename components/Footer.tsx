@@ -31,7 +31,7 @@ export function Footer() {
                 height={260}
                 className="h-6 w-auto brightness-0 invert"
               />
-              <span>Developed by Cresard Software Services</span>
+              <span>A product of Cresard Software Services</span>
             </a>
           </div>
           <nav aria-label="Product">

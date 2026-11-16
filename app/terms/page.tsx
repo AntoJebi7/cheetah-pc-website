@@ -20,7 +20,7 @@ export default function TermsPage() {
         </p>
         <div className="mt-8 space-y-6 leading-relaxed text-slate-900">
           <p>
-            Cheetah PC is a Windows desktop app developed by Cresard Software Services. When you first open the
+            Cheetah PC is a Windows desktop app, a product of Cresard Software Services. When you first open the
             app, you sign in with your Cresard account and accept the terms before you can use it.
           </p>
           <p>

@@ -28,7 +28,7 @@ export function Header() {
               height={260}
               className="h-4 w-auto brightness-0 invert sm:h-5"
             />
-            <span>Developed by Cresard Software Services</span>
+            <span>A product of Cresard Software Services</span>
           </a>
         </Container>
       </div>

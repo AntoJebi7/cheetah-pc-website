@@ -1,6 +1,6 @@
 # Cheetah PC website
 
-The public landing and download site for the Cheetah PC desktop app, live at https://cheetahpc.cresard.com. Cheetah PC is developed by Cresard Software Services (https://www.cresard.com).
+The public landing and download site for the Cheetah PC desktop app, live at https://cheetahpc.cresard.com. Cheetah PC is a product of Cresard Software Services (https://www.cresard.com).
 
 This repository also hosts the Windows installer, as GitHub Release assets. Installers are never committed to the code tree.
 

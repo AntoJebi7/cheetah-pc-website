@@ -330,20 +330,44 @@ export default async function HomePage() {
       </section>
 
       {/* Requirements */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-orange-100 via-orange-50 to-white py-20 sm:py-24">
-        <Container>
-          <Eyebrow>Requirements</Eyebrow>
-          <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl">
-            What you need
-          </h2>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {requirements.map((r) => (
-              <div key={r.title} className="rounded-2xl border-l-4 border-orange-600 bg-white p-6 shadow-sm">
-                <h3 className="text-lg font-bold text-slate-950">{r.title}</h3>
-                <p className="mt-2 text-slate-900">{r.body}</p>
-              </div>
-            ))}
+      <section className="relative isolate overflow-hidden bg-slate-950 py-20 text-white sm:py-28">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 -z-10 [background-image:linear-gradient(to_right,rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.06)_1px,transparent_1px)] [background-size:56px_56px] [mask-image:radial-gradient(ellipse_70%_80%_at_70%_40%,black,transparent)]"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -right-32 -top-32 -z-10 h-[26rem] w-[26rem] rounded-full bg-orange-500/30 blur-3xl"
+        />
+        <Container className="grid gap-12 lg:grid-cols-[0.9fr_1.4fr] lg:items-center">
+          <div>
+            <Eyebrow dark>Requirements</Eyebrow>
+            <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
+              Runs on the PC you already have
+            </h2>
+            <p className="mt-5 max-w-md text-lg text-white">
+              Four things, all of which a normal Windows PC already has. There is nothing else to set up.
+            </p>
           </div>
+          <ul className="grid gap-3 sm:grid-cols-2">
+            {requirements.map((r, i) => {
+              const Icon = [Monitor, ShieldCheck, Cloud, FileText][i];
+              return (
+                <li
+                  key={r.title}
+                  className="group flex gap-4 rounded-2xl border border-white/15 bg-white/[0.06] p-5 backdrop-blur transition-colors hover:border-orange-400/60 hover:bg-white/[0.1]"
+                >
+                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-orange-500 text-white">
+                    <Icon size={20} aria-hidden="true" />
+                  </span>
+                  <div className="min-w-0">
+                    <h3 className="text-base font-bold text-white">{r.title}</h3>
+                    <p className="mt-1 text-white">{r.body}</p>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
         </Container>
       </section>
 
