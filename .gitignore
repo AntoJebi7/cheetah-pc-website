@@ -1,0 +1,33 @@
+# dependencies
+node_modules/
+.pnp*
+
+# next
+.next/
+out/
+next-env.d.ts
+
+# env and secrets
+.env
+.env*
+!.env.example
+
+# vercel
+.vercel
+
+# logs
+*.log
+npm-debug.log*
+
+# installers and archives: these belong in GitHub Releases only
+*.exe
+*.msi
+*.zip
+*.7z
+
+# typescript
+*.tsbuildinfo
+
+# os
+.DS_Store
+Thumbs.db
