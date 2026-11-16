@@ -6,7 +6,7 @@ import { DownloadButton } from "@/components/DownloadButton";
 import { ReleaseTable } from "@/components/ReleaseFacts";
 import { Container, Eyebrow, SectionStripes } from "@/components/ui";
 
-export const revalidate = 3600;
+export const revalidate = 300;
 
 export const metadata: Metadata = {
   title: "Download for Windows",

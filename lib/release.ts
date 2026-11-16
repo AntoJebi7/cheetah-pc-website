@@ -18,7 +18,7 @@ type GitHubRelease = {
 };
 
 /**
- * Reads the latest public release from the GitHub API (no token, cached for an hour).
+ * Reads the latest public release from the GitHub API (no token, cached for five minutes).
  * Any failure, a 404 before the first release, or a missing installer asset all return
  * { status: "none" } so the page never shows invented numbers.
  */
@@ -26,7 +26,7 @@ export async function getRelease(): Promise<ReleaseInfo> {
   try {
     const res = await fetch(RELEASE_API_URL, {
       headers: { Accept: "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28" },
-      next: { revalidate: 3600 },
+      next: { revalidate: 300 },
     });
     if (!res.ok) return { status: "none" };
     const data = (await res.json()) as GitHubRelease;

@@ -20,7 +20,7 @@ import { DownloadButton } from "@/components/DownloadButton";
 import { ReleaseLine } from "@/components/ReleaseFacts";
 import { Container, Eyebrow, SafeBadge, SectionStripes, UnsafeBadge, WarmBadge } from "@/components/ui";
 
-export const revalidate = 3600;
+export const revalidate = 300;
 
 const features = [
   {
